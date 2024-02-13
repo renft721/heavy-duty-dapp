@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule],
   selector: 'heavy-duty-dapp-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  template: `
+    <header>
+     <h1>Hola, soy renft.</h1>
+    </header>
+    `,
 })
-export class AppComponent {
-  title = 'heavy-duty-dapp';
-}
+export class AppComponent {}
